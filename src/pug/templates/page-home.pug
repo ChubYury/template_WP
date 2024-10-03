@@ -1,0 +1,16 @@
+extends ./base/template
+
+block title
+  title=  "Template WP"
+    
+block header 
+  - const notLinkLogo = true
+  include block/header
+
+block main
+  main.page 
+    //- include home/main-block
+    include home/preview-block
+        
+block footer 
+  include block/footer
