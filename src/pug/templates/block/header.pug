@@ -1,2 +1,27 @@
 header.header-wrap 
-  h1 My beast header
+  .container
+    .header
+      if notLinkLogo == true
+        .logo
+          img.logo_icon.logo-dims(src="./images/icons/icons.svg#logo")
+          h2.logo_text PrimeCRM
+      else
+        a.logo(href='./')
+          img.logo-icon.logo-dims(src="./images/icons/icons.svg#logo")
+          h2.logo-text PrimeCRM
+      nav.navbar
+        ul.navbar_list
+          li.navbar_item
+            a.navbar_link(href='#') Solution
+          li.navbar_item
+            a.navbar_link(href='#') Industries
+          li.navbar_item
+            a.navbar_link(href='#') Products
+          li.navbar_item
+            a.navbar_link(href='#') Resources
+          li.navbar_item
+            a.navbar_link(href='#') Pricing
+          li.navbar_item
+            button.navbar_btn.btn-base login
+
+        
