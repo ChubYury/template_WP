@@ -1,0 +1,37 @@
+.preview-wrap
+  position: relative
+  overflow: hidden
+  
+  .container
+    z-index: 10
+
+.preview-decor
+  &_
+    &first
+      position: absolute
+      width: 60vw
+      top: 135px
+      right: -1vw
+      z-index: 1
+    &secondary
+      position: absolute
+      width: 700px
+      height: 650px
+      top: -450px
+      left: 30%
+      background-image: conic-gradient(at 15% 70%, var(--theme-bg-base), var(--theme-bg-secondary))
+      transform: rotate(-20deg) skew(3deg, 1deg)
+      border-radius: 0 0 0 60px
+      z-index: 2
+    &third
+      display: none
+      position: absolute
+      width: 100%
+      top: 120px
+      left: 0vw
+      z-index: 3
+    &img
+      width: 100%
+      object-fit: contain
+      object-position: center
+    
