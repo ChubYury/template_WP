@@ -4,7 +4,7 @@
   position: absolute
   width: 100%
   top: 50px
-  z-index: 10
+  z-index: 100
 .logo
   display: flex
   align-items: center
@@ -21,7 +21,9 @@
     &list
       display: flex
     &item
-      padding: 17px 23px
+      margin: 10px 20px
+      padding: 7px 3px
+      @include hover-link
     &link
       font-family: "Jost"
       font-weight: 500
