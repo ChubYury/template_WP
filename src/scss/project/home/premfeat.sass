@@ -1,2 +1,41 @@
 .premfeat-wrap
   position: relative
+
+.premfeat
+  padding-top: 7px
+  &_
+    &title
+      font-size: 28px
+      line-height: 32px
+      text-align: center
+      margin-bottom: 18px
+    &subtitle
+      margin-bottom: 20px
+      font-family: "OpenSans", sans-serif
+      font-size: 14px
+      line-height: 17px
+      text-align: center
+      text-transform: capitalize
+    &cards
+      display: flex
+      flex-wrap: wrap
+    &card
+      max-width: 427px
+      margin: 10px
+      padding: 40px 37px
+      background-color: var(--theme-bg-card-base)
+      transition: 0.3s
+      &:hover
+        width: 449px
+        background-color: var(--theme-color-white)
+        box-shadow: 0px 3px 6px 5px rgba(190,190,190,0.3)
+    &card-icon
+      width: 70px
+      margin-bottom: 20px
+    &card-title
+      font-size: 20px
+      line-height: 36px
+    &card-text
+      font-size: 14px
+      line-height: 17px
+      text-transform: capitalize
