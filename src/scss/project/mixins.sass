@@ -15,4 +15,29 @@
 
     &::after
       transform: rotateY(0deg)
-            
+
+
+@mixin half-border
+  position: relative
+  border-radius: 30px
+  background-color: var(--theme-color-white)
+  &::before
+    position: absolute
+    content: ""
+    width: 50%
+    height: 60%
+    top: -1px
+    right: -1px
+    border-radius: 0px 30px 0px 0px
+    background: linear-gradient(90deg, rgba(224,224,224,0) 0, rgba(224,224,224,1) 100%)
+    z-index: -1
+  &::after
+    position: absolute
+    content: ""
+    width: 50%
+    height: 60%
+    bottom: -1px
+    right: -1px
+    border-radius: 0px 0px 30px 0px
+    background: linear-gradient(90deg, rgba(224,224,224,0) 0, rgba(224,224,224,1) 100%)
+    z-index: -1
