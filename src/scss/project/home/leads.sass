@@ -1,0 +1,51 @@
+.leads-wrap
+  position: relative
+
+.leads
+  display: flex
+  flex-direction: column-reverse
+  &_
+    &decor
+      position: relative
+      width: 100%
+    &decor-img
+      position: relative
+      width: 100%
+      left: -1px
+      object-fit: contain
+      object-position: center
+    &content
+      padding: 5px
+    &title
+      font-size: 28px
+      line-height: 32px
+      margin-bottom: 22px
+    &subtitle
+      font-size: 14px
+      line-height: 17px
+      margin-bottom: 76px
+    // &list
+    &item
+      margin: 31px 0
+      padding: 16px 23px 16px 64px
+      @include half-border
+    &item-title
+      position: relative
+      font-size: 20px
+      line-height: 36px
+      &::before
+        position: absolute
+        content: ''
+        width: 22px
+        height: 22px
+        top: 20px
+        left: -49px
+        border-radius: 50%
+        background-color: var(--li-mark-color-base)
+    &item-text
+      font-size: 14px
+      line-height: 17px
+
+    
+
+
