@@ -1,0 +1,88 @@
+.salesmod
+  padding: 0 20px
+  &_
+    &title
+      margin-bottom: 12px
+      font-size: 28px
+      line-height: 32px
+      text-align: center
+      text-transform: capitalize
+    &subtitle
+      width: 90%
+      margin: 0 auto 60px auto
+      font-size: 14px
+      line-height: 17px
+      text-align: center
+      text-transform: capitalize
+    &blocks
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 15px
+      background-color: var(--theme-bg-four)
+      border-radius: 30px
+      outline: 3px dashed var(--theme-bg-three)
+      outline-offset: 15px
+    &block
+      margin-bottom: 40px
+    &btn
+      margin: 0 0 22px 16px
+      text-transform: capitalize
+    &item
+      position: relative
+      margin-bottom: 21px
+      padding: 10px
+      &::before
+        position: absolute
+        content: ""
+        width: 76%
+        height: 1px
+        bottom: 0
+        left: 74px
+        background: var(--theme-border-three)
+      &:last-child 
+        &::before
+          height: 0
+
+    &item-icon
+      position: absolute
+      width: 56px
+      height: 55px
+      padding: 13px 15px 15px 15px
+      top: 36px
+      border-radius: 50%
+      &--
+        &one
+          background-color: var(--icon-bg-color-one)
+        &two
+          background-color: var(--icon-bg-color-two)
+        &three
+          background-color: var(--icon-bg-color-three)
+        &four
+          background-color: var(--icon-bg-color-four)
+        &five
+          background-color: var(--icon-bg-color-five)
+        &six
+          background-color: var(--icon-bg-color-six)
+        &seven
+          background-color: var(--icon-bg-color-seven)
+        &eight
+          background-color: var(--icon-bg-color-eight)
+        &nine
+          background-color: var(--icon-bg-color-nine)
+        &ten
+          background-color: var(--icon-bg-color-ten)
+    &item-icon-body
+      width: 100%
+      height: 100%
+      object-fit: contain
+      object-position: center
+    &item-title
+      margin-left: 80px
+      font-size: 15px
+      line-height: 31px
+      text-transform: capitalize
+    &item-text
+      margin-left: 80px
+      font-size: 12px
+      line-height: 15px
