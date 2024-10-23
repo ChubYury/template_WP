@@ -1,0 +1,101 @@
+.process
+  position: relative
+  display: flex
+  flex-direction: column
+  padding: 0 5px
+  &_
+    &content-title
+      margin-bottom: 7px
+      font-size: 28px
+      line-height: 32px
+      text-transform: capitalize
+    &content-subtitle
+      font-size: 14px
+      line-height: 17px
+      margin-bottom: 52px
+    &content-item
+      position: relative
+      margin: 24px 0
+      padding: 20px 0 20px 78px
+      @include half-border
+    &content-item-num
+      position: absolute
+      top: 16%
+      left: 6px
+      font-family: "Jost"
+      font-size: 25px
+      font-weight: 600
+      line-height: 38px
+      color: var(--li-mark-color-base)
+    &content-item-title
+      font-size: 20px
+      line-height: 36px
+      text-transform: capitalize
+    &content-item-text
+      font-size: 14px
+      line-height: 17px
+    &software
+      position: relative
+      margin: 25px 5px 25px 5px
+      padding: 65px 20px 250px 20px
+      border-radius: 30px
+      background-color: var(--theme-bg-five)
+      overflow: hidden
+    &software-title
+      margin-bottom: 12px
+      font-size: 28px
+      line-height: 32px
+      text-transform: capitalize
+    &software-subtitle
+      margin-bottom: 10px
+      font-size: 14px
+      line-height: 17px
+      color: var(--text-color-three)
+    &software-text
+      margin-bottom: 20px
+      font-size: 14px
+      line-height: 17px
+    &software-btn
+      position: relative
+      display: block
+      margin: 0 auto 10px auto
+      padding: 12px 0 17px 49px
+      background-color: var(--theme-color-black)
+      &--
+        &left
+          width: 219px
+          height: 74px
+        &right
+          width: 250px
+          height: 74px
+    &software-btn-icon
+      position: absolute
+      top: 16%
+      left: 18px
+      &--
+        &left
+          width: 50px
+          height: 50px
+        &right
+          width: 48px
+          height: 48px
+    &software-btn-subtitle
+      display: inline-block
+      width: 75%
+      text-align: left
+      font-family: "Jost"
+      font-size: 15px
+      font-weight: 500
+    &software-btn-title
+      font-family: "Jost"
+      font-size: 28px
+      font-weight: 600
+    &software-decor
+      position: absolute
+      top: 66%
+      left: 5%
+      width: 100%
+    &software-decor-img
+      width: 100%
+      object-fit: contain
+      object-position: center
