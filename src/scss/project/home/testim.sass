@@ -1,0 +1,193 @@
+.testim
+  position: relative
+  padding: 44px 0
+  &_
+    &decor
+      position: absolute
+      width: 100%
+      top: 40px
+      z-index: 1
+    &decor-img
+      width: 100%
+      object-fit: contain
+      object-position: center
+    &slider
+      position: relative
+      z-index: 2
+    &slider-btn
+      --percentage: 68
+      --border: 1px
+      --color: #464646
+      
+      position: absolute
+      display: inline-grid
+      aspect-ratio: 1
+      place-content: center
+      width: 56px
+      margin: 5px
+      top: 100%
+      background-color: var(--title-color-base)
+      z-index: 15
+      transition: .3s
+      &--
+        &prev
+          left: 13px
+          &::before
+            content: ""
+            position: absolute
+            border-radius: 50%
+            transform: rotateZ(142deg)
+            inset: 0
+            background: conic-gradient(var(--color) calc(var(--percentage)*1.05%),#0000 0)
+            -webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--border)),#000 calc(100% - var(--border)))
+            mask: radial-gradient(farthest-side,#0000 calc(99% - var(--border)),#000 calc(100% - var(--border)))
+            transition: .3s
+            pointer-events: none
+        &next
+          right: 13px
+          &:before
+            content: ""
+            position: absolute
+            border-radius: 50%
+            transform: rotateZ(-40deg)
+            inset: 0
+            background: conic-gradient(var(--color) calc(var(--percentage)*1.05%),#0000 0)
+            -webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--border)),#000 calc(100% - var(--border)))
+            mask: radial-gradient(farthest-side,#0000 calc(99% - var(--border)),#000 calc(100% - var(--border)))
+            transition: .3s
+    &slider-btn-body
+      position: relative
+      width: 36px
+      height: 36px
+      border-radius: 50%
+      background-color: #454545
+      pointer-events: none
+      transition: .3s
+      &--
+        &prev
+          &:before
+            content: ""
+            position: absolute
+            width: 8px
+            height: 1px
+            top: 15px
+            left: 13px
+            background-color: #303030
+            transform: rotateZ(-48deg)
+            pointer-events: none
+            transition: 0.3s
+          &:after
+            content: ""
+            position: absolute
+            width: 8px
+            height: 1px
+            bottom: 14px
+            left: 13px
+            background-color: #303030
+            transform: rotateZ(48deg)
+            pointer-events: none
+            transition: 0.3s
+        &next
+          &:before
+            content: ""
+            position: absolute
+            width: 8px
+            height: 1px
+            top: 14px
+            left: 14px
+            background-color: #303030
+            transform: rotateZ(48deg)
+            transition: .3s
+          &:after
+            content: ""
+            position: absolute
+            width: 8px
+            height: 1px
+            bottom: 15px
+            left: 14px
+            background-color: #303030
+            transform: rotateZ(-48deg)
+            transition: .3s
+    &user-view
+      width: 202px
+      height: 202px
+      margin: 0 auto 26px auto
+      pointer-events: none
+    &user-img
+      width: 100%
+      height: 100%
+      border-radius: 50%
+      object-fit: cover
+      object-position: center
+    &username
+      position: relative
+      margin-bottom: 6px
+      font-size: 28px
+      line-height: 32px
+      text-align: center
+      color: var(--theme-color-white)
+      pointer-events: none
+      &::before
+        position: absolute
+        content: ''
+        top: -25px
+        left: calc(50% - 142px)
+        height: 0
+        width: 7px
+        transform: skew(-8deg)
+        border-top: 24px solid var(--theme-color-white)
+        border-left: 0px solid transparent
+        border-right: 4px solid transparent
+      &::after
+        position: absolute
+        content: ''
+        top: -25px
+        left: calc(50% - 126px)
+        height: 0
+        width: 7px
+        transform: skew(-8deg)
+        border-top: 24px solid var(--theme-color-white)
+        border-left: 0px solid transparent
+        border-right: 4px solid transparent
+    &userprof
+      margin-bottom: 13px
+      color: var(--theme-color-white)
+      text-align: center
+      pointer-events: none
+    &rating
+      margin-bottom: 22px
+      pointer-events: none
+    &verdict
+      font-size: 14px
+      line-height: 17px
+      color: var(--theme-color-white)
+      text-align: center
+      pointer-events: none
+    &data-line
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+      margin-top: 108px
+      padding: 50px 0 24px 0
+      border-top: 1px solid var(--theme-border-four)
+    &data
+      margin: 5px
+    &data-num
+      margin-bottom: 10px
+      font-family: "Jost"
+      font-size: 28px
+      font-weight: 600
+      line-height: 32px
+      text-align: center
+      color: var(--theme-color-white)
+      &--
+        &color-one
+          color: var(--text-color-four)
+        &color-two
+          color: var(--text-color-five)
+        &color-three
+          color: var(--text-color-six)
+        &color-four
+          color: var(--text-color-seven)
+    &data-name
+      color: var(--theme-color-white)

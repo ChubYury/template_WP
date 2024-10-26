@@ -184,3 +184,101 @@
     &software-btn
       display: inline-block
       margin: 0 26px 10px 0
+
+//*************************************
+
+.testim
+  &_
+    &username
+      font-size: 35px
+      line-height: 39px
+    &verdict
+      width: 70%
+      margin: 0 auto
+      font-size: 16px
+      line-height: 20px
+    &data-num
+      font-size: 35px
+      line-height: 39px
+    &slider-btn
+      width: 111px
+      top: 195px
+      &--
+        &prev
+          left: 3px
+          &:hover
+            &.testim
+              &_
+                &slider-btn
+                  &--
+                    &prev
+                      &::before
+                        background: conic-gradient(#fff calc(var(--percentage)*1.05%),#0000 0)
+            
+            .testim
+              &_
+                &slider-btn-body
+                  &--
+                    &prev
+                      box-shadow: 0px 0px 3px 1px rgba(255,255,255,1)
+                      &::before
+                        background-color: #fff
+                      &::after
+                        background-color: #fff
+          &:active
+            .testim
+              &_
+                &slider-btn-body
+                  &--
+                    &prev
+                      box-shadow: none
+        &next
+          right: 3px
+          &:hover
+            &.testim
+              &_
+                &slider-btn
+                  &--
+                    &next
+                      &::before
+                        background: conic-gradient(#fff calc(var(--percentage)*1.05%),#0000 0)
+            
+            .testim
+              &_
+                &slider-btn-body
+                  &--
+                    &next
+                      box-shadow: 0px 0px 3px 1px rgba(255,255,255,1)
+                      &::before
+                        background-color: #fff
+                      &::after
+                        background-color: #fff
+          &:active
+            .testim
+              &_
+                &slider-btn-body
+                  &--
+                    &next
+                      box-shadow: none
+    &slider-btn-body
+      width: 70px
+      height: 70px
+      &--
+        &prev
+          &::before
+            width: 16px
+            top: 30px
+            left: 26px
+          &::after
+            width: 16px
+            bottom: 28px
+            left: 26px
+        &next
+          &::before
+            width: 16px
+            top: 28px
+            left: 28px
+          &::after
+            width: 16px
+            bottom: 30px
+            left: 28px
