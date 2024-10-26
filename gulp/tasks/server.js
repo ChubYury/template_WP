@@ -4,7 +4,8 @@ export const server = (done) => {
             baseDir: `${app.path.build.html}`,
             index: 'page-home.html',
             routes: {
-                "/index.html": `${app.path.build.html}/404.html`
+                "/index.html": `${app.path.build.html}/404.html`,
+                "/test": `${app.path.build.html}/test.html`
             }
         },
         notify: false,
