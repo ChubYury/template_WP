@@ -1,4 +1,62 @@
 footer.footer-wrap
   .container
     .footer
-      h1 Footer
+      .footer_head
+        if notLinkLogo == true
+          .logo
+            img.logo_icon.logo-dims(src="./images/icons/icons.svg#logo")
+            h2.logo_text PrimeCRM
+        else
+          a.logo(href='./')
+            img.logo-icon.logo-dims(src="./images/icons/icons.svg#logo")
+            h2.logo-text PrimeCRM
+        .footer_socials
+          img.footer_socials-item(src="./images/icons/icons.svg#soc-insta")
+          img.footer_socials-item(src="./images/icons/icons.svg#soc-fb")
+          img.footer_socials-item(src="./images/icons/icons.svg#soc-tw")
+          img.footer_socials-item(src="./images/icons/icons.svg#soc-ld")
+          img.footer_socials-item(src="./images/icons/icons.svg#soc-yt")
+      .footer_blocks.js-footer-tabs
+        button.btn-second.js-footer-tabs-btn
+        .footer_block.footer_block--one
+          h5.footer_block-title Usefull Link
+          ul.footer_block-list.footer_block-list--close
+            li.footer_block-item
+              a.footer_block-link(href="#") Solution
+            li.footer_block-item
+              a.footer_block-link(href="#") Industries
+            li.footer_block-item
+              a.footer_block-link(href="#") Products
+            li.footer_block-item
+              a.footer_block-link(href="#") Resources
+            li.footer_block-item
+              a.footer_block-link(href="#") Pricing
+        .footer_block.footer_block--two
+          h5.footer_block-title Service
+          ul.footer_block-list.footer_block-list--close
+            li.footer_block-item
+              a.footer_block-link(href="#") Sale
+            li.footer_block-item
+              a.footer_block-link(href="#") Marketing
+            li.footer_block-item
+              a.footer_block-link(href="#") Real Estate
+            li.footer_block-item
+              a.footer_block-link(href="#") Autimotive
+            li.footer_block-item
+              a.footer_block-link(href="#") Education
+        .footer_block.footer_block--three
+          h5.footer_block-title Contact Us
+          ul.footer_block-list.footer_block-list--close
+            li.footer_block-item.footer_block-item--border
+              p.footer_block-address 1700 W Blancke St, kiyev 
+                                  | port south USA, American
+            li.footer_block-item.footer_block-item--border
+              p.footer_block-address +3255 456 789 
+                                  | mail@primarily.com
+        .footer_block.footer_block--four
+          h5.footer_block-title Our Latest News
+          .footer_block-news.footer_block-news--close
+            img.footer_block-news-img(src="@img/bg-news.jpg" alt="background news")
+            bottom.footer_block-btn
+              span.footer_block-btn-text raed now
+      p.footer_end Copyright © Primarly | Designed by VictorFlow Templates 
