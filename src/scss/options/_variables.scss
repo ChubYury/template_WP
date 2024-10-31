@@ -1,10 +1,13 @@
 :root {
-  --mq-size-sm: 570px;
-  --mq-size-md: 762px;
-  --mq-size-lg: 986px;
-  --mq-size-xl: 1194px;
-  --mq-size-xxl: 1394px;
 
+  //*** this width takes into account the scroll bar
+  --mq-size-sm: 560px;
+  --mq-size-md: 752px;
+  --mq-size-lg: 976px;
+  --mq-size-xl: 1184px;
+  --mq-size-xxl: 1384px;
+
+  // *** colors ***************************
   --theme-color-white: #fff;
   --theme-color-black: #000;
 
@@ -21,10 +24,7 @@
   --theme-border-four: #999999;
   --theme-border-five: #CCCCCC;
   --theme-border-six: #4A4A4A;
-  // --theme-color-base: #80addc;
-  // --theme-color-secondary: #40576e;
-  // --theme-error-color: #BC3850;
-
+  
   --title-color-base: #303030;
   --text-color-base: #4E4E4E;
   --text-color-secondary: #8A6FFD;
@@ -34,16 +34,13 @@
   --text-color-six: #47DD56;
   --text-color-seven: #FF5454;
   --text-color-eight: #313131;
-
-
-  // --text-btn-color: #FFFFFF;
+  
   --rating-color-base: #FFB545;
   --li-mark-color-base: #47CFFF;
   --btn-color-base: #303030;
   --btn-color-secondary: #4BE3EB;
   --btn-color-three: #EAEAEA;
-  // --link-color-base: #3314ff;
-
+  
   --icon-bg-color-one: #EDEDFF;
   --icon-bg-color-two: #FFE2ED;
   --icon-bg-color-three: #E4F4E6;
@@ -54,5 +51,4 @@
   --icon-bg-color-eight: #F4E5FF;
   --icon-bg-color-nine: #FFE7DF;
   --icon-bg-color-ten: #FFDEF2;
-
 }
