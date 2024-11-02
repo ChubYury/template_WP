@@ -5,6 +5,8 @@ export const server = (done) => {
             index: 'page-home.html',
             routes: {
                 "/index.html": `${app.path.build.html}/404.html`,
+                "/index": `${app.path.build.html}/404.html`,
+                "/posts": `${app.path.build.html}/page-posts.html`,
                 "/test": `${app.path.build.html}/test.html`
             }
         },
