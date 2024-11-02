@@ -1,0 +1,36 @@
+.categories
+  max-width: 478px
+  padding: 58px 39px
+  margin-bottom: 50px
+  background-color: var(--theme-color-white)
+  border-radius: 30px
+  box-shadow: 0px 28px 57px 8px rgba(190,190,190,0.25)
+  &_
+    &title
+      margin-bottom: 25px
+      font-size: 28px
+      font-weight: 600
+      line-height: 32px
+      text-transform: capitalize
+    &item
+      &:last-child
+        .categories
+          &_
+            &item-title
+              margin-bottom: 0
+              padding-bottom: 0
+              border-bottom: none
+    &item-title
+      position: relative
+      margin-bottom: 20px
+      padding-bottom: 22px
+      border-bottom: 1px dashed var(--theme-border-base)
+      color: var(--text-color-base)
+      font-family: OpenSans
+      font-size: 14px
+      font-weight: 600
+      line-height: 17px
+      text-transform: uppercase
+    &item-num
+      position: absolute
+      right: 0
