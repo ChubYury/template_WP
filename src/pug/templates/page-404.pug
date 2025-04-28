@@ -1,14 +1,14 @@
 extends ./base/template
 
 block title
-    title=  "404"
-
+  title=  "404"
+    
 block header 
   include block/header
 
 block main
-    main.page
-        h1 Error 404
-
+  main.page 
+    include 404/404-block
+        
 block footer 
   include block/footer
