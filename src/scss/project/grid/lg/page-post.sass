@@ -1,17 +1,23 @@
 .post
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
   &_
-    &blocks
-      flex-direction: row
-      flex-wrap: wrap
-      justify-content: space-between
     &article
       width: 63%
       order: 3
+    &img
+      height: 550px
     &aside
       flex-direction: column
       justify-content: flex-start
       width: 34%
       order: 4
+
+.share
+  &_
+    &box
+      gap: 2.5vw
 
 // .new-posts
 //   width: 100%

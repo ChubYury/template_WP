@@ -2,10 +2,9 @@ section.post-wrap
   .post_decor
     img.post_decor-img(src="@img/bg-figure-right.png")
   .container
-    .post_blocks
+    .post
       .post_article
-        .post_img
-          img.post_img-body(src="@img/posts/post1.jpg")
+        img.post_img(src="@img/posts/post1.jpg")
         p.post_data
           span  
             img.post_icon(src="./images/icons/icons.svg#person")  
@@ -30,9 +29,61 @@ section.post-wrap
           li.post_item Listen to what they say about you
           li.post_item Randomised words which.
           li.post_item Internet tend to repeat predefined chunks
-        .post_quote
-          
-          
+        p.post_quote
+          span.decor-el.decor-el_circle
+            span.decor-el_comma.decor-el_comma--left
+            span.decor-el_comma.decor-el_comma--right
+          span “For the longest time, computers have been associated with work. Mainframes were for 
+              | the Army, government agencies, and then large companies. 
+              br
+              | Workstations were for engineers and software programmers. PCs were initially for other 
+              | white-collar jobs.”
+        h3.post_title-sect Make real time a work improvements
+        p.post_text Collaboratively Administrate Empowered Markets Via Plug-And-Play Networks. 
+                  | Dynamically Procrastinate B2C Users After Installed Base Benefits. Dramatically 
+                  | Visualize Customer Directed Convergence Without Revolutionary ROI.
+        ol.post_list 
+          li.post_item It brings the right people together with all the right information and tools to get work done
+          li.post_item We provide operational efficiency, data security, and flexible scale
+          li.post_item Your best work, together in one package that works seamlessly from your computer
+          li.post_item Delivers the tools you need to save time Improve field performance always
+        .share
+          h3.share_title Share
+          p.share_box
+            a.share_link(href="https://www.facebook.com")
+              img.share_img(src="./images/icons/icons.svg#fb")
+            a.share_link(href="http://x.com")
+              img.share_img(src="./images/icons/icons.svg#tv")
+            a.share_link(href="https://www.linkedin.com")
+              img.share_img(src="./images/icons/icons.svg#in")
+            a.share_link(href="https://www.instagram.com")
+              img.share_img(src="./images/icons/icons.svg#inst")
+        form.form
+          h3.form_title Leave a Comments
+          .form_field.form_field--min
+            label.form_label.label-base(for="formpostname") Full name *
+            input.form_inp.inp-base(id="formpostname"
+                                    type="text" 
+                                    placeholder="Your Name")
+          .form_field.form_field--min
+            label.form_label.label-base(for="formpostemail") Your email *
+            input.form_inp.inp-base(id="formpostemail"
+                                    type="email" 
+                                    placeholder="example@yourmail.com")
+          .form_field
+            label.form_label.label-base(for="formpostaddress") Website *
+            input.form_inp.inp-base(id="formpostaddress"
+                                    type="text"
+                                    placeholder="your website address here")
+          .form_field
+            label.form_label.label-base(for="formpostmessage") Message *
+            textarea.form_textarea.inp-base(id="formpostmessage" 
+                                            placeholder="Hello there,I would like to talk about how to...")
+          .form_field
+            label.form_label.label-base.form_label--min(for="formpostcheckbox") 
+              input.form_checkbox(id="formpostcheckbox" type="checkbox")
+              span#savedata Save my name, email, and website in this browser for the next time I comment.
+          button.form_submit.btn-base() Post Comment
       aside.post_aside
         include ../block/new-posts-block
         include ../block/categories-block

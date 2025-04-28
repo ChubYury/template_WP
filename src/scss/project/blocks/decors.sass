@@ -1,0 +1,26 @@
+.decor-el
+  &_
+    &circle
+      display: block
+      position: relative
+      width: 68px
+      height: 68px
+      border-radius: 50%
+      background: var(--btn-color-base)
+    &comma
+      display: block
+      position: absolute
+      width: 10px
+      height: 0
+      transform: skew(-12deg) rotate(180deg)
+      border-top: 17px solid var(--theme-color-white)
+      border-left: 0px solid transparent
+      border-right: 4px solid transparent
+
+      &--
+        &left
+          top: 25px
+          left: calc(50% + 2px)
+        &right
+          top: 25px
+          left: calc(50% - 14px)
